@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>&#13;
+	<type>fa</type>&#13;
+	<automaton>&#13;
+		<note>&#13;
+			<text>3. Escreva um algoritmo que verifica se uma dada árvore binária é do tipo AVL.
+Suponha já existente uma função p.altura() que retorna a altura de uma
+árvore binária referenciada por p.</text>&#13;
+			<x>89.0</x>&#13;
+			<y>45.0</y>&#13;
+		</note>&#13;
+		<note>&#13;
+			<text>public boolean verificarAVL(node no){
+   if(no.getEsquerda != null){
+      if((no.getEsquerda().altura()  -no.getDireita().altura()) &lt;= 1 || (no.getEsquerda().altura()-no.getDireita().altura())&gt;=-1){
+         verificarAVL(no.getEsquerda());   
+      }else{
+         return false;    
+      }
+    }
+     if(no.getDireita!=null){
+       if((no.getEsquerda().altura()  -no.getDireita().altura()) &lt;= 1 || (no.getEsquerda().altura()-no.getDireita().altura())&gt;=-1){
+         verificarAVL(no.getDireita());
+      }else{
+         return false;    
+      }
+    }
+    if(no.getEsquerda()==null &amp;&amp; no.getDireita()==null){
+      return true;
+    }
+    return null;
+}</text>&#13;
+			<x>236.0</x>&#13;
+			<y>157.0</y>&#13;
+		</note>&#13;
+		<note>&#13;
+			<text>-1&lt;=BALANCEAMENTO&lt;=1</text>&#13;
+			<x>614.0</x>&#13;
+			<y>94.0</y>&#13;
+		</note>&#13;
+	</automaton>&#13;
+</structure>

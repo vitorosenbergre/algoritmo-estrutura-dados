@@ -1,0 +1,59 @@
+Escreva as seguintes expressões em notação posfixa e perfixa.
+-----------------
+a) Prefixa 
+	a + b * c / d
+	+ * / c d b a
+
+a.1) Posfixa
+	a + b * c / d
+	a b d c / * +
+------------------
+
+b) Prefixa 
+	a + b * (c/d)
+	+ * / c d b a  
+
+b.1) Posfixa
+	a+ b * (c/d)
+	c d / b * a +
+
+---------------
+
+c) Prefixa 
+	(a + b) * c /d
+	 / * + a b c d
+
+c.1) Posfixa
+	(a + b) * c /d
+	a b + c * d /
+---------------
+
+d) Prefixa 
+	(a + b * c) / d
+	 / + * b c  a d 
+
+d.1) Posfixa
+	(a + b * c) / d
+	a b c * + d /
+-------------
+
+e) Prefixa 
+	(c / d) * ( a + b)
+	* / c d + a b
+
+e.1) Posfixa
+	(c / d) * ( a + b)
+	 c d / a b + * // o ultimo sinal sempre fica por ultimo
+
+------------------------------------------
+a + b * c / d // letra a
+a+ b * (c/d) // letra b
+(a + b) * c /d // letra c
+(a + b * c) / d // letra d 
+(c / d) * ( a + b) // letra c
+-----------------------------------------
+Escrever as expressões em notação infixa:
+w x y / z * -  = 	((y / x) * z) - w
+w x y z / * -  =	z / y * x - w
+w x – y / z *  =	((w- x) / y) * z
+y z * w x - /  =	(y*z) / (w-x)
